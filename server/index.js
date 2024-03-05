@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
 /* ROUTES */
-app.get("/",(req,res)=>{
+app.get("/testing",(req,res)=>{
   res.send("Hello,Welcome to Finance Application server");
 })
 app.use("/kpi", kpiRoutes);
