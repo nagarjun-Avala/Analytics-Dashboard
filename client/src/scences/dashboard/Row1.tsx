@@ -81,12 +81,12 @@ const Row1 = () => {
                             <linearGradient id='colorRevenue' x1={"0"} y1={"0"} x2={"0"} y2={"1"} >
                                 <stop
                                     offset={"5%"}
-                                    stopColor={palette.primary[300]}
+                                    stopColor="#71f5de"
                                     stopOpacity={0.5}
                                 />
                                 <stop
                                     offset={"95%"}
-                                    stopColor={palette.primary[300]}
+                                    stopColor="#71f5de"
                                     stopOpacity={0}
                                 />
 
@@ -94,12 +94,12 @@ const Row1 = () => {
                             <linearGradient id='colorExpenses' x1={"0"} y1={"0"} x2={"0"} y2={"1"} >
                                 <stop
                                     offset={"5%"}
-                                    stopColor={palette.primary[300]}
+                                    stopColor="#71f5de"
                                     stopOpacity={0.5}
                                 />
                                 <stop
                                     offset={"95%"}
-                                    stopColor={palette.primary[300]}
+                                    stopColor="#71f5de"
                                     stopOpacity={0}
                                 />
 
@@ -181,7 +181,7 @@ const Row1 = () => {
                             yAxisId="left"
                             type={"monotone"}
                             dataKey="profit"
-                            stroke={palette.tertiary[500]}
+                            stroke="#8884d8"
                         />
                         <Line
                             yAxisId="right"
@@ -214,12 +214,12 @@ const Row1 = () => {
                             <linearGradient id='colorRevenue' x1={"0"} y1={"0"} x2={"0"} y2={"1"} >
                                 <stop
                                     offset={"5%"}
-                                    stopColor={palette.primary[300]}
+                                    stopColor="#71f5de"
                                     stopOpacity={0.8}
                                 />
                                 <stop
                                     offset={"95%"}
-                                    stopColor={palette.primary[300]}
+                                    stopColor="#71f5de"
                                     stopOpacity={0}
                                 />
 
