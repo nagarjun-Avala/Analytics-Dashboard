@@ -36,7 +36,7 @@ const Navbar = () => {
             <FlexBetween gap="2rem">
                 {/* Navigation Links */}
                 {navLinks.map((link) => (
-                    <Box key={link.key} sx={{ "&:hover": { color: palette.primary[100] } }}>
+                    <Box key={link.key} sx={{ "&:hover": { color: "#d0fcf4" } }}>
                         <Link
                             to={link.link}
                             onClick={() => setSelected(link.key)}
