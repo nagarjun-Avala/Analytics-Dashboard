@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import { useMemo } from 'react'
 import DashboardBox from '@/components/DashboardBox';
 import { useGetKpisQuery, useGetProductsQuery } from '@/state/api';
 import { Box, Typography, useTheme } from '@mui/material';
@@ -30,7 +30,7 @@ const Row2 = () => {
     const { data: productData } = useGetProductsQuery();
     const { palette } = useTheme();
 
-    const pieColors = [palette.primary[800], palette.primary[300]]
+    const pieColors = ["#076050", "#71f5de"]
 
     const operationalExpenses = useMemo(() => {
         return (
@@ -100,7 +100,7 @@ const Row2 = () => {
                             yAxisId="left"
                             type={"monotone"}
                             dataKey="Non Operational Expenses"
-                            stroke={palette.tertiary[500]}
+                            stroke="#8884d8"
                         />
                         <Line
                             yAxisId="right"
@@ -136,7 +136,7 @@ const Row2 = () => {
                             paddingAngle={2}
                             dataKey="value"
                         >
-                            {pieData.map((entry, index) => (
+                            {pieData.map((_entry, index) => (
                                 <Cell
                                     key={`cell-${index}`}
                                     fill={pieColors[index]}
@@ -149,7 +149,7 @@ const Row2 = () => {
                         <Typography
                             m={"0.3rem 0"}
                             variant='h3'
-                            color={palette.primary[300]}
+                            color="#71f5de"
                         >
                             83
                         </Typography>
@@ -203,7 +203,7 @@ const Row2 = () => {
                         <Scatter
                             name="Product Expense Ratio"
                             data={productExpenseData}
-                            fill={palette.tertiary[500]}
+                            fill="#8884d8"
                         />
                     </ScatterChart>
                 </ResponsiveContainer>
